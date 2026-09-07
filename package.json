@@ -1,0 +1,36 @@
+{
+  "name": "streamops-manager-crm",
+  "version": "1.0.0",
+  "description": "Twitch & Kick Yayıncı ve Influencer Menajer CRM (Notion Estetiğinde)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "crm",
+    "twitch",
+    "kick",
+    "streamer",
+    "talent-manager",
+    "influencer",
+    "notion"
+  ],
+  "author": "StreamOps Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.streamops.crm",
+    "productName": "StreamOps CRM",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
